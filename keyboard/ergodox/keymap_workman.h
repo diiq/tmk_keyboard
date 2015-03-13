@@ -2,23 +2,23 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     KEYMAP(  // layer 0 : default
         // left hand
-         EQL, FN1, FN2, FN3, FN4, FN5, ESC,
+         GRV, FN1, FN2, FN3, FN4, FN5, ESC,
         FN20,   Q,   D,   R,   W,   B,FN16,
-        LSFT,   A,   S,   H,   T,   G,
-        LBRC,   Z,   X,   M,   C,   V,FN17,
-        MUTE,VOLD,VOLU,FN12,FN11,
+        LGUI,   A,   S,   H,   T,   G,
+        LSFT,   Z,   X,   M,   C,   V,LBRC,
+        MUTE,VOLD,VOLU,   1,   2,
                                        F12, F13,
                                            FN18,
-                                 FN19,LGUI,LALT,
+                                 FN11,BSPC,FN18,
         // right hand
-            FN14, FN6, FN7, FN8,MINS, EQL,BSLS,
-            FN15,   J,   F,   U,   P,SCLN,QUOT,
-                    Y,   N,   E,   O,   I,RSFT,
-            FN13,   K,   L,COMM, DOT,SLSH,RBRC,
-                      FN11, F17, F19, F20,SLEP,
-         F10, F11,
-         F11,
-        BSPC, ENT, SPC
+                                                         FN14, FN6, FN7, FN8,MINS, EQL,BSLS,
+                                                         FN15,   J,   F,   U,   P,SCLN,QUOT,
+                                                                 Y,   N,   E,   O,   I, ENT,
+                                                         RBRC,   K,   L,COMM, DOT,SLSH,RSFT,
+                                                                   FN11, F17, F19, F20,SLEP,
+                                                     F10, F11,
+                                                     F11,
+                                                     ENT,FN11, SPC
     ),
 
     KEYMAP(  // layer 1 : function and symbol keys
@@ -31,15 +31,15 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                       TRNS,TRNS,
                                            TRNS,
                                  TRNS,TRNS,TRNS,
-        // right hand
-             F12, F6,  F7,  F8,  F9,  F10, TRNS,
-             TRNS,TRNS,TRNS,  UP,TRNS,TRNS,TRNS,
-                  TRNS,LEFT,DOWN,RGHT,TRNS,TRNS,
-             TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
-                       TRNS,TRNS,TRNS,TRNS,TRNS,
-        TRNS,TRNS,
-        TRNS,
-        TRNS,TRNS,TRNS
+                                                    // right hand
+                                                         F12, F6,  F7,  F8,  F9,  F10, TRNS,
+                                                         TRNS,TRNS,TRNS,  UP,TRNS,TRNS,TRNS,
+                                                               F18,LEFT,DOWN,RGHT,TRNS,TRNS,
+                                                         TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
+                                                                   TRNS,TRNS,TRNS,TRNS,TRNS,
+                                                    TRNS,TRNS,
+                                                    TRNS,
+                                                    TRNS,TRNS,TRNS
     ),
 
     KEYMAP(  // layer 2 : keyboard functions
